@@ -1,18 +1,13 @@
-webdev-common
-=============
-This repository contains some Node.js web developement common packages for personal use.
+@somni/eslint-config
+====================
+This repository contains some ESLint configs for personal use.
 
-Packages
---------
-<table>
-  <tr>
-    <th>Package ID</th>
-    <th>Path</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>@somni/eslint-config</td>
-    <td><a href="packages/eslint-config">eslint-config</a></td>
-    <td>ESLint configs and rules</td>
-  </tr>
-</table>
+Install
+-------
+```bash
+pnpm install "https://github.com/somnisomni/eslint-config.git#main"
+```
+
+License
+-------
+[MIT License](LICENSE.md)

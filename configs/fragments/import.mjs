@@ -1,4 +1,4 @@
-import importX from "eslint-plugin-import-x";
+import { default as importX } from "eslint-plugin-import-x";
 
 /** @type {import("eslint").Linter.Config} */
 const appendConfig = {
