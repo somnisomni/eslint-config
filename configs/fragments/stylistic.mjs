@@ -3,7 +3,7 @@ import stylistic from "@stylistic/eslint-plugin";
 /** @type {import("eslint").Linter.Config[]} */
 const configs = [
   // Plugin: stylistic
-  stylistic.configs["recommended-flat"],
+  stylistic.configs.recommended,
 
   // Stylistic rules
   {
