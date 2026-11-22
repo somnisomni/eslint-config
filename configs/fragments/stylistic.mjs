@@ -13,8 +13,6 @@ const configs = [
       "@stylistic/no-multi-spaces": [ "warn", { ignoreEOLComments: true } ],
 
       // Stylistic - errors
-      "@stylistic/array-bracket-spacing": [ "error", "always" ],
-      "@stylistic/object-curly-spacing": [ "error", "always" ],
       "@stylistic/indent": [ "error", 2, {
         SwitchCase: 1,
         VariableDeclarator: "first",
@@ -56,6 +54,14 @@ const configs = [
         singleline: {
           delimiter: "semi",
           requireLast: false,
+        },
+      } ],
+      "@stylistic/list-style": [ "error", {
+        singleLine: {
+          spacing: "always",
+        },
+        overrides: {
+          "()": { singleLine: { spacing: "never" } },
         },
       } ],
     },
