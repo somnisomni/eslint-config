@@ -1,8 +1,15 @@
-import { default as importX } from "eslint-plugin-import-x";
+import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
+import { createNodeResolver, default as importX } from "eslint-plugin-import-x";
 
 /** @type {import("eslint").Linter.Config} */
 const appendConfig = {
   name: "somni - import-x",
+  settings: {
+    "import-x/resolver-next": [
+      createTypeScriptImportResolver(),
+      createNodeResolver(),
+    ],
+  },
   rules: {
     // Off
     "import/namespace": "off",
